@@ -1,0 +1,330 @@
+.container {
+	max-width: 960px;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	padding: 0.3rem 0px;
+}
+
+.hero-banner {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/spirit-bear-karate-and-kobudo.appspot.com/o/Mobile%2Fkarate-martial-arts-banner_mob.jpg?alt=media&token=83eb0d2e-0ab8-4353-a693-c1a25f5280d3") no-repeat fixed;
+	background-color: #FFF;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: top !important;
+	background-attachment: scroll;
+	min-height: 900px;
+}
+
+.advisor_image {
+	width:100%;
+}
+
+.para {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.modelTitle {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	font-weight:800
+}
+
+.title {
+	font-family: 'Bangers', cursive;
+	font-size: 3em;
+	font-weight: 400;
+}
+
+.smallTitle {
+	font-family: 'Bangers', cursive;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.custbutton.btn {
+	font-size: 1em !important;
+	font-family: 'Roboto', sans-serif !important;
+	padding: 10px 50px !important;
+}
+
+.font {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 400;
+}
+
+.spacer {
+	margin-top: 150px;
+}
+
+
+.containerFlex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.itemFlex {
+	flex: 0 32%;
+	height: 100px;
+	margin-bottom: 2%;
+}
+
+.font-icon {
+	font-size: 3em;
+	text-align: center;
+	display: inline-block;
+	width: 100%
+}
+
+.block-icon {
+	font-size: 1.4em;
+	text-align: center;
+	display: inline-block;
+	width: 100%
+}
+
+.footer-text-icon {
+	font-size: 1em;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+.hero-block {
+	max-width: 600px;
+	margin: 15vh auto 0 auto;
+	text-align: center;
+	text-shadow: 1px 2px #0f0e0e;
+
+}
+
+.footer-icon {
+	display: inline;
+	padding: 0px 10px;
+	font-size: 2em
+}
+
+.footer-link {
+	text-decoration: none;
+}
+
+/*.darkbg-radial {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.5550814075630253) 30%, rgba(255,255,255,0) 71%);
+}*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	i.block-icon {
+		font-size: 0.5em;
+	}
+
+	.hero-banner {
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/spirit-bear-karate-and-kobudo.appspot.com/o/Mobile%2Fkarate-martial-arts-banner_mob.jpg?alt=media&token=83eb0d2e-0ab8-4353-a693-c1a25f5280d3") no-repeat fixed;
+		background-size: cover;
+	}
+
+}
+
+
+.single_advisor_profile {
+	position: relative;
+	margin-bottom: 50px;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	z-index: 1;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.125);
+}
+
+.single_advisor_profile .advisor_thumb {
+	position: relative;
+	z-index: 1;
+	border-radius: 15px 15px 0 0;
+	margin: 0 auto;
+	background-color: #000000;
+	overflow: hidden;
+}
+
+.single_advisor_profile .advisor_thumb::after {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	position: absolute;
+	width: 150%;
+	height: 80px;
+	bottom: -45px;
+	left: -25%;
+	content: "";
+	background-color: #ffffff;
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+
+@media only screen and (max-width: 575px) {
+	.single_advisor_profile .advisor_thumb::after {
+		height: 160px;
+		bottom: -90px;
+	}
+}
+
+.single_advisor_profile .advisor_thumb .social-info {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	bottom: 0;
+	right: 30px;
+	text-align: right;
+}
+
+.single_advisor_profile .advisor_thumb .social-info a {
+	font-size: 14px;
+	color: #212529;
+	padding: 0 5px;
+}
+
+.single_advisor_profile .advisor_thumb .social-info a:hover,
+.single_advisor_profile .advisor_thumb .social-info a:focus {
+	color: #212529;
+}
+
+.single_advisor_profile .advisor_thumb .social-info a:last-child {
+	padding-right: 0;
+}
+
+.single_advisor_profile .single_advisor_details_info {
+	position: relative;
+	z-index: 1;
+	padding: 30px;
+	text-align: right;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	border-radius: 0 0 15px 15px;
+	background-color: #ffffff;
+}
+
+.single_advisor_profile .single_advisor_details_info::after {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+	height: 3px;
+	background-color: #000000;
+	content: "";
+	top: 12px;
+	right: 30px;
+}
+
+.single_advisor_profile .single_advisor_details_info h6 {
+	margin-bottom: 0.25rem;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.single_advisor_profile .single_advisor_details_info h6 {
+		font-size: 14px;
+	}
+}
+
+.single_advisor_profile .single_advisor_details_info p {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.single_advisor_profile .single_advisor_details_info p {
+		font-size: 12px;
+	}
+}
+
+.single_advisor_profile:hover .advisor_thumb::after,
+.single_advisor_profile:focus .advisor_thumb::after {
+	background-color: #dc3545;
+}
+
+.single_advisor_profile:hover .advisor_thumb .social-info a,
+.single_advisor_profile:focus .advisor_thumb .social-info a {
+	color: #ffffff;
+}
+
+.single_advisor_profile:hover .advisor_thumb .social-info a:hover,
+.single_advisor_profile:hover .advisor_thumb .social-info a:focus,
+.single_advisor_profile:focus .advisor_thumb .social-info a:hover,
+.single_advisor_profile:focus .advisor_thumb .social-info a:focus {
+	color: #ffffff;
+}
+
+.single_advisor_profile:hover .single_advisor_details_info,
+.single_advisor_profile:focus .single_advisor_details_info {
+	background-color: #dc3545;
+}
+
+.single_advisor_profile:hover .single_advisor_details_info::after,
+.single_advisor_profile:focus .single_advisor_details_info::after {
+	background-color: #ffffff;
+}
+
+.single_advisor_profile:hover .single_advisor_details_info h6,
+.single_advisor_profile:focus .single_advisor_details_info h6, .single_advisor_profile:hover .single_advisor_details_info p, .single_advisor_profile:focus .single_advisor_details_info p {
+	color: #ffffff;
+}
+
+.terms-list {
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+font-size: 1.2em;
+font-weight: 400;
+   }
+
+.cus-list > li {
+font-family: 'Roboto', sans-serif;
+font-size: 1.2em;
+font-weight: 400;
+}
+
+.red-hlight {
+	-webkit-box-shadow: 0px 0px 13px 2px rgba(220,53,69,0.79); 
+	box-shadow: 0px 0px 13px 2px rgba(220,53,69,0.79);
+	border: 1px solid #EFEFEF;
+	border-radius: 5px;
+}
+.bl-hlight {
+	-webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.68); 
+	box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.68);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.hero-banner {
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/spirit-bear-karate-and-kobudo.appspot.com/o/Karate-martial-arts-banner.jpg?alt=media&token=3a3344b6-dae2-4638-9539-925ddcf99ece") no-repeat fixed;
+		background-size: cover;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+	i.block-icon {
+		font-size: 1.8em;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
