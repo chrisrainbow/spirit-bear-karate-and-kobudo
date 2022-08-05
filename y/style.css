@@ -1,3 +1,5 @@
+/*  Define Layout */ 
+
 .container {
 	max-width: 960px;
 }
@@ -9,21 +11,7 @@
 	padding: 0.3rem 0px;
 }
 
-.hero-banner {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/spirit-bear-karate-and-kobudo.appspot.com/o/Mobile%2Fkarate-martial-arts-banner_mob.jpg?alt=media&token=83eb0d2e-0ab8-4353-a693-c1a25f5280d3") no-repeat fixed;
-	background-color: #FFF;
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: top !important;
-	background-attachment: scroll;
-	min-height: 900px;
-}
-
-.advisor_image {
-	width:100%;
-}
+/* Typography */
 
 .para {
 	font-family: 'Roboto', sans-serif;
@@ -59,6 +47,25 @@
 	font-family: 'Roboto', sans-serif !important;
 	font-weight: 400;
 }
+
+
+/* Hero Banner */
+.hero-banner {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/spirit-bear-karate-and-kobudo.appspot.com/o/Mobile%2Fkarate-martial-arts-banner_mob.jpg?alt=media&token=83eb0d2e-0ab8-4353-a693-c1a25f5280d3") no-repeat fixed;
+	background-color: #FFF;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: top !important;
+	background-attachment: scroll;
+	min-height: 900px;
+}
+
+.advisor_image {
+	width:100%;
+}
+
 
 .spacer {
 	margin-top: 150px;
@@ -358,6 +365,48 @@ font-weight: 400;
 		background-size: cover;
 	}
 }
+
+
+/* HubSpot Forms */
+
+form {
+	position:relative;
+}
+
+.loading {
+	position: absolute;
+	margin: auto auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes spin {
+	0%{transform:rotate(0)}
+	100%{transform:rotate(360deg)}
+}
+
+.loading-circle {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #c7c7cb;
+    border-top: 4px solid #dc3545;
+    border-radius: 50%;
+    animation: spin .6s ease-in infinite;
+}
+
+.loading-box {
+    background-color: #efefef;
+    opacity: .6;
+    border-radius: 5px;
+}
+
+.formAlert{}
+.formAlert--error{}
+.formAlert--success{}
+
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
