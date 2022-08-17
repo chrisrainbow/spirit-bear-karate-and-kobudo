@@ -402,9 +402,23 @@ form {
     border-radius: 5px;
 }
 
-.formAlert{}
-.formAlert--error{}
-.formAlert--success{}
+.formAlert {
+	padding: 15px 20px;
+    border-radius: 3px;
+    text-align: center;
+    max-width: 680px;
+    margin: 20px auto;}
+.formAlert--error {
+	color: #a94442;
+    border: 2px solid #a94442;
+    background: #f2dede;
+}
+
+.formAlert--success {
+	background-color: #dff0d8;
+    border-color: #a3d48e;
+    color: #3c763d;
+}
 
 
 
